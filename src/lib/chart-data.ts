@@ -1,4 +1,9 @@
-import { ChartDataPoint } from "@/types/dashboard";
+interface ChartDataPoint {
+  id: number;
+  date: string;
+  value: string;
+  metric: string;
+}
 
 export const formatChartValue = (value: string): string => {
   const num = parseFloat(value);

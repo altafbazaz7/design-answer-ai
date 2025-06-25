@@ -1,9 +1,18 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { TooltipData } from "@/types/dashboard";
 
 interface DataPointTooltipProps {
   data: TooltipData;
 }
+
+ interface TooltipData {
+  value: string;
+  date: string;
+  description: string;
+  x: number;
+  y: number;
+  visible: boolean;
+}
+
 
 const DataPointTooltip = ({ data }: DataPointTooltipProps) => {
   return (

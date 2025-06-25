@@ -1,4 +1,4 @@
-import { ChartDataPoint, KPIMetrics, Variable, ChargingStation } from "@/types/dashboard";
+import type { ChartDataPoint, KPIMetrics, Variable, ChargingStation } from "../types/dashboard";
 
 export const mockChargingStation: ChargingStation = {
   id: 1,

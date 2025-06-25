@@ -2,8 +2,13 @@ import { useState } from "react";
 import { Info, Plus } from "lucide-react";
 import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
-import { KPIMetrics } from "../types/dashboard";
 import { motion, AnimatePresence } from "framer-motion";
+interface KPIMetrics {
+  infrastructureUnits: string;
+  chargingGrowth: string;
+  localizationChange: string;
+  fleetGrowth: string;
+}
 
 interface KPISectionProps {
   metrics?: KPIMetrics;

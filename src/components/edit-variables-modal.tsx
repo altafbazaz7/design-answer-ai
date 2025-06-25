@@ -4,9 +4,15 @@ import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Card, CardContent } from "../components/ui/card";
 import { motion, AnimatePresence } from "framer-motion";
-import { Variable } from "../types/dashboard";
 import VariableTag from "./variable-tag";
 
+interface Variable {
+  id: number;
+  name: string;
+  category: string;
+  description?: string;
+  isActive: boolean;
+}
 
 interface EditVariablesModalProps {
   isOpen: boolean;
